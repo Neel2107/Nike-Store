@@ -9,7 +9,7 @@ const Hero = ({heroapi :{title, subtitle, btntext, img, sociallinks, videos}}) =
           <div className="grid items-center justify-items-center mt-28">
             <h1>{title}</h1>
             <h1>{subtitle}</h1>
-            <button>{btntext}</button>
+            <button className="w-[10vh] h-[8vh] opacity-50">{btntext}</button>
             {/* <div></div>
             <div></div> */}
             </div>
