@@ -7,7 +7,7 @@ export const Clips = ({clip, imgsrc}) => {
         <img 
         src={imgsrc} 
         alt="img/clips"
-        className='inset-0 flex h-full w-full object-cover' />
+        className='inset-0 flex h-full w-full object-cover absolute top-0 left-0 right-0 ' />
     </div>
     <video >
         <source 
@@ -16,7 +16,7 @@ export const Clips = ({clip, imgsrc}) => {
         />
        
     </video>
-    
+     
     </>
   )
 }
