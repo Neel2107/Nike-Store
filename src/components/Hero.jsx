@@ -1,5 +1,5 @@
 import React from "react";
-
+import {Clips} from "./Utils/Clips"
 const Hero = ({heroapi :{title, subtitle, btntext, img, sociallinks, videos}}) => {
   return (
     <>
@@ -11,7 +11,7 @@ const Hero = ({heroapi :{title, subtitle, btntext, img, sociallinks, videos}}) =
             <h1 className="text-6xl lg:text-5xl md:text-4xl sm:text-3xl xsm:text-2xl font-extrabold filter drop-shadow-sm text-slate-200 ">{title}</h1>
             <button type="button" className="button-theme bg-slate-200  shadow-slate-200 rounded-xl ml-5 " >{btntext}</button>
             <div  className="">
-              {videos.map((val, i) => (
+              {videos?.map((val, i) => (
                 <Clips 
                 key={i}
                 imgsrc = {val.imgsrc}
