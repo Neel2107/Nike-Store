@@ -1,5 +1,6 @@
 import React from "react";
 import {Clips} from "./Utils/Clips"
+import SocialsLink from './Utils/SocialsLink';
 const Hero = ({heroapi :{title, subtitle, btntext, img, sociallinks, videos}}) => {
   return (
     <>
@@ -21,7 +22,13 @@ const Hero = ({heroapi :{title, subtitle, btntext, img, sociallinks, videos}}) =
               ))}
             </div>
             <div  className="">
-      
+                  {sociallinks?.map((val,i) => (
+                    <SocialsLink
+                    key={i}
+                    icon={val.icon}
+                    />
+
+                  ))}
             </div>
             </div>
             <div className="flex items-center">
