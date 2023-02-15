@@ -1,12 +1,13 @@
 import {heroapi} from "./data/data"
-import { Hero } from "./components"
+import { Hero, Sales } from "./components"
 function App() {
 
   return (
     < >
-
+<main>
   <Hero heroapi= {heroapi}/>
-
+  <Sales/>
+  </main>
     </>
   )
 }
