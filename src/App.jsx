@@ -1,4 +1,4 @@
-import {heroapi} from "./data/data"
+import {heroapi, popularsales, toprateslaes} from "./data/data"
 import { Hero, Sales } from "./components"
 function App() {
 
@@ -6,7 +6,8 @@ function App() {
     < >
 <main>
   <Hero heroapi= {heroapi}/>
-  <Sales/>
+  <Sales endpoint =  {popularsales}/>
+  <Sales endpoint =  {toprateslaes}/>
   </main>
     </>
   )
