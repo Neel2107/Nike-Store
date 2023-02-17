@@ -13,7 +13,7 @@ const Item = ({ id, color, shadow, title, text, img, btn, rating, price }) => {
 
           <div className=" flex items-center justify-between w-28">
             <div className=" flex items-center bg-white/80 px-1 rounded"><h1 className="text-black text-sm">${price}</h1></div>
-            <div className=" flex items-center"><StarIcon className="icon-style text-slate-900"/><h1 className="">{rating}</h1></div>
+            <div className=" flex items-center gap-1  "><StarIcon className="icon-style w-5 h-5 md:w-4 md:h-4  "/><h1 className="text-sm font-normal">{rating}</h1></div>
           </div>
           <div className=" flex items-center">
             <button type="button" className="icon-style text-slate-900"><ShoppingBagIcon/></button>
