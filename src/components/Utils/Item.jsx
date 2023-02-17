@@ -16,7 +16,7 @@ const Item = ({ id, color, shadow, title, text, img, btn, rating, price }) => {
             <div className=" flex items-center gap-1  "><StarIcon className="icon-style w-5 h-5 md:w-4 md:h-4  "/><h1 className="md:text-sm font-normal text-slate-100">{rating}</h1></div>
           </div>
           <div className=" flex items-center gap-3 ">
-            <button type="button" className="icon-style text-slate-900"><ShoppingBagIcon/></button>
+            <button type="button" className="bg-white 90 blur-effect-theme"><ShoppingBagIcon className="icon-style text-slate-900"/></button>
             <button type="button" className="">{btn}</button>
           </div>
         </div>
