@@ -1,6 +1,6 @@
 import React from 'react'
 
-const FlexContent = () => {
+const FlexContent = ({ endpoint : {title, subtitle, text, img, url}}) => {
   return (
     <>
     <div>
