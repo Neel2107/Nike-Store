@@ -1,5 +1,5 @@
 import {heroapi, popularsales, toprateslaes} from "./data/data"
-import { Hero, Sales } from "./components"
+import { FlexContent, Hero, Sales, highlight, sneaker } from "./components"
 function App() {
 
   return (
@@ -7,7 +7,9 @@ function App() {
 <main className="flex flex-col gap-16 relative ">
   <Hero heroapi= {heroapi}/>
   <Sales endpoint =  {popularsales} ifExists/>
+  <FlexContent endpoint={highlight}/>
   <Sales endpoint =  {toprateslaes}/>
+  <FlexContent endpoint={sneaker}/>
   </main>
     </>
   )
