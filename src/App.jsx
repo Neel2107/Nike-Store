@@ -1,5 +1,6 @@
-import {heroapi, popularsales, toprateslaes} from "./data/data"
-import { FlexContent, Hero, Sales, highlight, sneaker } from "./components"
+import {heroapi, popularsales,highlight,sneaker, toprateslaes} from "./data/data"
+import { FlexContent, Hero, Sales,  } from "./components"
+
 function App() {
 
   return (
