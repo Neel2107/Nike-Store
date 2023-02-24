@@ -1,7 +1,8 @@
 import React from "react";
 import Title from "./Utils/Title";
-import Splide from "@splidejs/splide";
-import "@splidejs/splide/css";
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import "@splidejs/react-splide/css"
+import { HeartIcon } from "@heroicons/react/24/solid";
 const Stories = ({ story: { title, news } }) => {
   return (
     <>
@@ -14,7 +15,12 @@ const Stories = ({ story: { title, news } }) => {
             <SplideSlide key={i} className="mb-0.5">
               <div>
                 <div>
-                  <img src={val.img} alt="" />
+                  <img src={val.img} alt={`img/story/${i}`} className="" />
+                </div>
+                <div>
+                    <div>
+                        <HeartIcon className="icon-style"/><span>{val.like}</span>
+                    </div>
                 </div>
               </div>
             </SplideSlide>
